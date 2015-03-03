@@ -4,7 +4,7 @@ using System;
 using System.ComponentModel.Composition;
 using System.IO;
 using System.Reflection;
-
+using Sce.Atf.Adaptation;
 using Sce.Atf.Dom;
 
 namespace Sce.Atf.Obj
