@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ExternalProject Name="Tao">
+  <Binary Name="Tao.Cg" Path="ThirdParty\Tao.OpenGl\Tao.Cg.dll" />
+  <Binary Name="Tao.DevIl" Path="ThirdParty\Tao.OpenGl\Tao.DevIl.dll" />
+  <Binary Name="Tao.OpenGl" Path="ThirdParty\Tao.OpenGl\Tao.OpenGl.dll" />
+  <Binary Name="Tao.Platform.Windows" Path="ThirdParty\Tao.OpenGl\Tao.Platform.Windows.dll" />
+</ExternalProject>

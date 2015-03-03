@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ExternalProject Name="SharpDX">
+  <Binary Name="SharpDX" Path="ThirdParty\SharpDX\SharpDX.dll" />
+  <Binary Name="SharpDX.Direct2D1" Path="ThirdParty\SharpDX\SharpDX.Direct2D1.dll" />
+  <Binary Name="SharpDX.DXGI" Path="ThirdParty\SharpDX\SharpDX.DXGI.dll" />
+</ExternalProject>

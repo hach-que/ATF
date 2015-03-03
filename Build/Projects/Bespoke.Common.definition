@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ExternalProject Name="Bespoke.Common">
+  <Binary Name="Bespoke.Common" Path="ThirdParty\Bespoke\Bespoke.Common.dll" />
+  <Binary Name="Bespoke.Common.Osc" Path="ThirdParty\Bespoke\Bespoke.Common.Osc.dll" />
+</ExternalProject>

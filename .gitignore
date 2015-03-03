@@ -15,7 +15,6 @@
 [Dd]ebug/
 [Dd]ebugPublic/
 [Rr]elease/
-build/
 bld/
 #[Bb]in/ #ATF has some 'bin' sub-directories in \DevTools
 #x64 #ATF has some 'x64' sub-directories in \ThirdParty
@@ -177,3 +176,6 @@ UpgradeLog*.htm
 
 # Microsoft Fakes
 FakesAssemblies/
+*.Windows.csproj
+*.Windows.sln
+*.Windows.speccache

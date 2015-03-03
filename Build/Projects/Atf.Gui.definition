@@ -1,84 +1,21 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>9.0.30729</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{4765C2A7-F989-40DB-BC12-FCD67025B93F}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Sce.Atf</RootNamespace>
-    <AssemblyName>Atf.Gui</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
-    <TargetFrameworkProfile />
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>..\..\lib\anycpu_dotnet_clr4_debug\</OutputPath>
-    <IntermediateOutputPath>obj\Debug.vs2010\</IntermediateOutputPath>
-    <DefineConstants>TRACE;DEBUG;CS_4</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-    <NoWarn>
-    </NoWarn>
-    <DocumentationFile>
-    </DocumentationFile>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>..\..\lib\anycpu_dotnet_clr4_release\</OutputPath>
-    <IntermediateOutputPath>obj\Release.vs2010\</IntermediateOutputPath>
-    <DefineConstants>TRACE;CS_4</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <DocumentationFile>
-    </DocumentationFile>
-    <NoWarn>
-    </NoWarn>
-    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-  </PropertyGroup>
-  <ItemGroup>
-    <Reference Include="Bespoke.Common">
-      <HintPath>..\..\ThirdParty\Bespoke\Bespoke.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="Bespoke.Common.Osc">
-      <HintPath>..\..\ThirdParty\Bespoke\Bespoke.Common.Osc.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Scripting, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\ThirdParty\IronPython\Microsoft.Scripting.dll</HintPath>
-    </Reference>
-    <Reference Include="SharpDX, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\ThirdParty\SharpDX\SharpDX.dll</HintPath>
-    </Reference>
-    <Reference Include="SharpDX.Direct2D1, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\ThirdParty\SharpDX\SharpDX.Direct2D1.dll</HintPath>
-    </Reference>
-    <Reference Include="SharpDX.DXGI, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\ThirdParty\SharpDX\SharpDX.DXGI.dll</HintPath>
-    </Reference>
+<?xml version="1.0" encoding="utf-8"?>
+<Project Name="Atf.Gui" Path="Framework\Atf.Gui" Type="Library">
+  <References>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.Composition" />
-    <Reference Include="System.Core">
-      <RequiredTargetFramework>3.5</RequiredTargetFramework>
-    </Reference>
+    <Reference Include="System.Core" />
     <Reference Include="System.Data" />
     <Reference Include="System.Design" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Drawing.Design" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml" />
-  </ItemGroup>
-  <ItemGroup>
+    <Reference Include="Atf.Core" />
+	<Reference Include="Bespoke.Common" />
+	<Reference Include="SharpDX" />
+	<Reference Include="Microsoft.Scripting" />
+  </References>
+  <Files>
     <Compile Include="Applications\ApplicationUtil.cs" />
     <Compile Include="Applications\CanvasPrintDocument.cs">
       <SubType>Component</SubType>
@@ -511,8 +448,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resources.cs" />
     <Compile Include="User32.cs" />
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Resources\4WAY05.CUR" />
     <EmbeddedResource Include="Resources\AlignBottoms16.png" />
     <EmbeddedResource Include="Resources\AlignBottoms24.png" />
@@ -614,11 +549,7 @@
     <EmbeddedResource Include="Resources\ZoomOut16.png" />
     <EmbeddedResource Include="Resources\ZoomOut24.png" />
     <EmbeddedResource Include="Resources\ZoomOut32.png" />
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Resources\Thumbs.db" />
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Resources\add.png" />
     <EmbeddedResource Include="Resources\arrow_down_blue.png" />
     <EmbeddedResource Include="Resources\arrow_up_blue.png" />
@@ -640,8 +571,6 @@
     <EmbeddedResource Include="Resources\SubDocument16.png" />
     <EmbeddedResource Include="Resources\SubDocument24.png" />
     <EmbeddedResource Include="Resources\SubDocument32.png" />
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Controls\CurveEditing\Resources\AddKeysTool.png" />
     <EmbeddedResource Include="Controls\CurveEditing\Resources\BreakTangents.png" />
     <EmbeddedResource Include="Controls\CurveEditing\Resources\ClampedTangents.png" />
@@ -686,20 +615,10 @@
     <EmbeddedResource Include="Resources\printer_view16.png" />
     <EmbeddedResource Include="Resources\printer_view24.png" />
     <EmbeddedResource Include="Resources\printer_view32.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Atf.Core\Atf.Core.vs2010.csproj">
-      <Project>{9D1835B6-D1C2-44BA-BAE1-05C6EC442D2F}</Project>
-      <Name>Atf.Core.vs2010</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Applications\WebServices\Web References\com.scea.ship.submitBug\SubmitBug.discomap" />
     <None Include="Applications\WebServices\Web References\com.scea.ship.submitBug\SubmitBug.wsdl" />
     <None Include="Applications\WebServices\Web References\com.scea.ship.versionCheck\VersionChecker.discomap" />
     <None Include="Applications\WebServices\Web References\com.scea.ship.versionCheck\VersionChecker.wsdl" />
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Resources\HideSelection16.png" />
     <EmbeddedResource Include="Resources\HideSelection24.png" />
     <EmbeddedResource Include="Resources\HideSelection32.png" />
@@ -712,56 +631,36 @@
     <EmbeddedResource Include="Resources\ShowSelection16.png" />
     <EmbeddedResource Include="Resources\ShowSelection24.png" />
     <EmbeddedResource Include="Resources\ShowSelection32.png" />
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Resources\reference.png" />
     <EmbeddedResource Include="Resources\referenceNull.png" />
     <EmbeddedResource Include="Resources\referenceOverride.png" />
     <EmbeddedResource Include="Resources\resource.png" />
     <EmbeddedResource Include="Resources\resourceFolder.png" />
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Resources\search.ico" />
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Resources\Computer.ico" />
     <EmbeddedResource Include="Resources\diskdrive16.png" />
     <EmbeddedResource Include="Resources\diskdrive24.png" />
     <EmbeddedResource Include="Resources\diskdrive32.png" />
     <EmbeddedResource Include="Resources\Folder.ico" />
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Resources\filter.ico" />
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Resources\sourceControl_connect.png" />
     <EmbeddedResource Include="Resources\sourceControl_enable.png" />
     <EmbeddedResource Include="Resources\sourceControl_reconcile.png" />
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Resources\sort_ascending.png" />
     <EmbeddedResource Include="Resources\sort_descending.png" />
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Resources\checked_items.png" />
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Resources\ui_locked16x16.png" />
     <EmbeddedResource Include="Resources\ui_locked24x24.png" />
     <EmbeddedResource Include="Resources\ui_locked32x32.png" />
     <EmbeddedResource Include="Resources\ui_unlocked16x16.png" />
     <EmbeddedResource Include="Resources\ui_unlocked24x24.png" />
     <EmbeddedResource Include="Resources\ui_unlocked32x32.png" />
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Resources\edit_locked16x16.png" />
     <EmbeddedResource Include="Resources\edit_locked24x24.png" />
     <EmbeddedResource Include="Resources\edit_locked32x32.png" />
     <EmbeddedResource Include="Resources\edit_unlocked16x16.png" />
     <EmbeddedResource Include="Resources\edit_unlocked24x24.png" />
     <EmbeddedResource Include="Resources\edit_unlocked32x32.png" />
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Resources\sourceControl_add.png" />
     <EmbeddedResource Include="Resources\sourceControl_checkin.png" />
     <EmbeddedResource Include="Resources\sourceControl_checkout.png" />
@@ -769,54 +668,26 @@
     <EmbeddedResource Include="Resources\sourceControl_getLatest.png" />
     <EmbeddedResource Include="Resources\sourceControl_refresh.png" />
     <EmbeddedResource Include="Resources\sourceControl_revert.png" />
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Resources\component16.png" />
     <EmbeddedResource Include="Resources\component24.png" />
     <EmbeddedResource Include="Resources\component32.png" />
     <EmbeddedResource Include="Resources\components.png" />
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Resources\pin_green16.png" />
     <EmbeddedResource Include="Resources\pin_green24.png" />
     <EmbeddedResource Include="Resources\pin_green32.png" />
     <EmbeddedResource Include="Resources\pin_grey16.png" />
     <EmbeddedResource Include="Resources\pin_grey24.png" />
     <EmbeddedResource Include="Resources\pin_grey32.png" />
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Resources\document_unknown.png" />
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Resources\unknown13.png" />
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Resources\ja\Localization.xml">
       <SubType>Designer</SubType>
     </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Resources\folderClosedReference16.png" />
     <EmbeddedResource Include="Resources\folderOpenReference16.png" />
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Resources\Reset16.png" />
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Resources\AtfLogo.png" />
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Resources\AtfIcon.ico" />
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Resources\package_error.png" />
-  </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
+  </Files>
 </Project>

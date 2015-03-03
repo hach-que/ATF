@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ExternalProject Name="libcrashreport_net">
+  <Binary Name="libcrashreport_net" Path="ThirdParty/libcrashreport_net/libcrashreport_net.dll" />
+</ExternalProject>

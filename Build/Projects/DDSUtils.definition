@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ExternalProject Name="DDSUtils">
+  <Binary Name="DDSUtils" Path="ThirdParty\Tao.OpenGl\DDSUtils.dll" />
+</ExternalProject>

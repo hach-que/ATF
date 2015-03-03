@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Name="Atf.Atgi" Path="Framework\Atf.Atgi" Type="Library">
+  <References>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Atf.Core" />
+    <Reference Include="Atf.Gui.OpenGL" />
+    <Reference Include="Atf.Gui" />
+  </References>
+  <Files>
+    <Compile Include="Anim.cs" />
+    <Compile Include="AnimChannel.cs" />
+    <Compile Include="AnimClip.cs" />
+    <Compile Include="AtgiResolver.cs" />
+    <Compile Include="AtgiSchemaTypeLoader.cs" />
+    <Compile Include="AtgiXmlPersister.cs" />
+    <Compile Include="CustomData.cs" />
+    <Compile Include="CustomDataAttribute.cs" />
+    <Compile Include="DataSet.cs" />
+    <Compile Include="Instance.cs" />
+    <Compile Include="Joint.cs" />
+    <Compile Include="LodGroup.cs" />
+    <Compile Include="Material.cs" />
+    <Compile Include="MaterialBinding.cs" />
+    <Compile Include="Mesh.cs" />
+    <Compile Include="Node.cs" />
+    <Compile Include="NodeProperties.cs" />
+    <Compile Include="Pose.cs" />
+    <Compile Include="PoseElement.cs" />
+    <Compile Include="PrimitiveSet.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Scene.cs" />
+    <Compile Include="schemas\Schema.cs" />
+    <Compile Include="Shader.cs" />
+    <Compile Include="ShaderBinding.cs" />
+    <Compile Include="Texture.cs" />
+    <Compile Include="World.cs" />
+    <EmbeddedResource Include="schemas\atgi.xsd" />
+    <None Include="schemas\GenSchemaDef.bat" />
+  </Files>
+</Project>

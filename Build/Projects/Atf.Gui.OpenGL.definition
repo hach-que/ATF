@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Name="Atf.Gui.OpenGL" Path="Framework\Atf.Gui.OpenGL" Type="Library">
+  <References>
+    <Reference Include="DDSUtils" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+	<Reference Include="Tao" />
+	<Reference Include="Atf.Core" />
+	<Reference Include="Atf.Gui.WinForms" />
+	<Reference Include="Atf.Gui" />
+  </References>
+  <Files>
+    <Compile Include="ArcBallCameraController.cs" />
+    <Compile Include="BitmapContext.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CanvasControl3D.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CgfxCore.cs" />
+    <Compile Include="DdsCompressor.cs" />
+    <Compile Include="DdsImageLoader.cs" />
+    <Compile Include="DesignControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DevilImageLoader.cs" />
+    <Compile Include="FlyCameraController.cs" />
+    <Compile Include="IImageLoader.cs" />
+    <Compile Include="Image.cs" />
+    <Compile Include="ImageLoaderRegistry.cs" />
+    <Compile Include="MsBitmapImageLoader.cs" />
+    <Compile Include="OpenGlCore.cs" />
+    <Compile Include="Panel3D.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PickAction.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RenderAction.cs" />
+    <Compile Include="RenderObject.cs" />
+    <Compile Include="RenderStateGuardianUtils.cs" />
+    <Compile Include="RenderStats.cs" />
+    <Compile Include="TargaImageLoader.cs" />
+    <Compile Include="TextureInfo.cs" />
+    <Compile Include="TextureManager.cs" />
+    <Compile Include="ThumbnailGenerator.cs" />
+    <Compile Include="TrackBallCameraController.cs" />
+    <Compile Include="TranslatorControl.cs" />
+    <Compile Include="Util3D.cs" />
+    <Compile Include="VboManager.cs" />
+    <Compile Include="WalkCameraController.cs" />
+    <EmbeddedResource Include="DesignControl.resx">
+      <DependentUpon>DesignControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panel3D.resx">
+      <DependentUpon>Panel3D.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ja\Localization.xml" />
+  </Files>
+</Project>

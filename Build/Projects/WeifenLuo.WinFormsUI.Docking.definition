@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ExternalProject Name="WeifenLuo.WinFormsUI.Docking">
+  <Binary Name="WeifenLuo.WinFormsUI.Docking" Path="ThirdParty\DockPanelSuite\WeifenLuo.WinFormsUI.Docking.dll" />
+</ExternalProject>

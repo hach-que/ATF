@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ExternalProject Name="Wws.LiveConnect">
+  <Binary Name="Wws.LiveConnect" Path="ThirdParty/Wws.LiveConnect/clr4/x86/Wws.LiveConnect.dll" />
+</ExternalProject>

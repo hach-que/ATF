@@ -1,49 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>9.0.30729</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{7C36A258-9102-420D-B80A-5EB5717644B6}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Sce.Atf</RootNamespace>
-    <AssemblyName>Atf.Gui.WinForms</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
-    <TargetFrameworkProfile />
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>..\..\lib\anycpu_dotnet_clr4_debug\</OutputPath>
-    <IntermediateOutputPath>obj\Debug.vs2010\</IntermediateOutputPath>
-    <DefineConstants>TRACE;DEBUG;CS_4</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-    <NoWarn>649</NoWarn>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>..\..\lib\anycpu_dotnet_clr4_release\</OutputPath>
-    <IntermediateOutputPath>obj\Release.vs2010\</IntermediateOutputPath>
-    <DefineConstants>TRACE;CS_4</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-    <NoWarn>649</NoWarn>
-  </PropertyGroup>
-  <ItemGroup>
+<?xml version="1.0" encoding="utf-8"?>
+<Project Name="Atf.Gui.WinForms" Path="Framework\Atf.Gui.WinForms" Type="Library">
+  <References>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.Composition" />
-    <Reference Include="System.Core">
-      <RequiredTargetFramework>3.5</RequiredTargetFramework>
-    </Reference>
+    <Reference Include="System.Core" />
     <Reference Include="System.Data" />
     <Reference Include="System.Design" />
     <Reference Include="System.Drawing" />
@@ -52,13 +13,12 @@
     <Reference Include="System.Web.Services" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.XML" />
-    <Reference Include="WeifenLuo.WinFormsUI.Docking, Version=2.3.2.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\ThirdParty\DockPanelSuite\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
-    </Reference>
+    <Reference Include="WeifenLuo.WinFormsUI.Docking" />
     <Reference Include="WindowsBase" />
-  </ItemGroup>
-  <ItemGroup>
+    <Reference Include="Atf.Core" />
+    <Reference Include="Atf.Gui" />
+  </References>
+  <Files>
     <Compile Include="Applications\AtfScriptVariables.cs" />
     <Compile Include="Applications\AutoDocumentService.cs" />
     <Compile Include="Applications\AutomationService.cs" />
@@ -629,18 +589,7 @@
     <Compile Include="StandardIconUtil.cs" />
     <Compile Include="WaitCursor.cs" />
     <Compile Include="WinFormsUtil.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Atf.Core\Atf.Core.vs2010.csproj">
-      <Project>{9D1835B6-D1C2-44BA-BAE1-05C6EC442D2F}</Project>
-      <Name>Atf.Core.vs2010</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Atf.Gui\Atf.Gui.vs2010.csproj">
-      <Project>{4765C2A7-F989-40DB-BC12-FCD67025B93F}</Project>
-      <Name>Atf.Gui.vs2010</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
+	
     <EmbeddedResource Include="Applications\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -747,37 +696,18 @@
     <EmbeddedResource Include="Controls\WindowLayoutNewDialog.resx">
       <DependentUpon>WindowLayoutNewDialog.cs</DependentUpon>
     </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="Controls\Adaptable\Graphs\D2dDigraphRenderer.cs">
       <SubType>Code</SubType>
     </Compile>
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Applications\SkinService\Schemas\skin.xsd">
       <SubType>Designer</SubType>
     </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Applications\SkinService\Skin.tmpl" />
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Resources\ja\Localization.xml">
       <SubType>Designer</SubType>
     </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ja\Atf.Gui.WinForms.resources.dll" />
-  </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
-  <Target Name="AfterBuild">
-    <Copy SourceFiles="Resources\ja\Atf.Gui.WinForms.resources.dll" DestinationFolder="$(OutputPath)\ja" />
-  </Target>
+    <None Include="ja\Atf.Gui.WinForms.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </Files>
 </Project>
