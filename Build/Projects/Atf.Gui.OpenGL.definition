@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project Name="Atf.Gui.OpenGL" Path="Framework\Atf.Gui.OpenGL" Type="Library">
+  <Properties>
+	<Property Name="RootNamespace" Value="Atf.OpenGL" />
+  </Properties>
   <References>
     <Reference Include="DDSUtils" />
     <Reference Include="System" />

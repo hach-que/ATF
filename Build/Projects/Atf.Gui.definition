@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project Name="Atf.Gui" Path="Framework\Atf.Gui" Type="Library">
+  <Properties>
+	<Property Name="RootNamespace" Value="Sce.Atf" />
+  </Properties>
   <References>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.Composition" />

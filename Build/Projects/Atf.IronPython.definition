@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project Name="Atf.IronPython" Path="Framework\Atf.IronPython" Type="Library">
+  <Properties>
+	<Property Name="RootNamespace" Value="Sce.Atf.Applications" />
+  </Properties>
   <References>
 	<Reference Include="IronPython" />
 	<Reference Include="Microsoft.Scripting" />

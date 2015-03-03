@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project Name="Atf.Gui.Wpf" Path="Framework\Atf.Gui.Wpf" Type="Library">
+  <Properties>
+	<Property Name="RootNamespace" Value="Sce.Atf.Wpf" />
+  </Properties>
   <References>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />

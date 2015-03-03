@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project Name="Atf.SyntaxEditorControl" Path="Framework\Atf.SyntaxEditorControl" Type="Library">
+  <Properties>
+	<Property Name="RootNamespace" Value="Sce.Atf.Controls.SyntaxEditorControl" />
+  </Properties>
   <References>
     <Reference Include="System" />
     <Reference Include="System.Drawing" />
