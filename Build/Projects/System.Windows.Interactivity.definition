@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ExternalProject Name="System.Windows.Interactivity">
+  <Binary Name="System.Windows.Interactivity" Path="ThirdParty\Interactivity\System.Windows.Interactivity.dll" />
+</ExternalProject>

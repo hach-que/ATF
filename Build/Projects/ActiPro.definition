@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ExternalProject Name="ActiPro">
+  <Binary 
+	Name="ActiproSoftware.Shared.Net20, Version=1.0.101.0, Culture=neutral, processorArchitecture=MSIL" 
+	Path="ThirdParty\ActiPro\ActiproSoftware.Shared.Net20.dll" />
+  <Binary 
+	Name="ActiproSoftware.SyntaxEditor.Addons.DotNet.Net20, Version=4.0.281.0, Culture=neutral, processorArchitecture=MSIL" 
+	Path="ThirdParty\ActiPro\ActiproSoftware.SyntaxEditor.Addons.DotNet.Net20.dll" />
+  <Binary 
+	Name="ActiproSoftware.SyntaxEditor.Net20, Version=4.0.281.0, Culture=neutral, processorArchitecture=MSIL"
+	Path="ThirdParty\ActiPro\ActiproSoftware.SyntaxEditor.Net20.dll" />
+  <Binary
+	Name="ActiproSoftware.WinUICore.Net20, Version=1.0.101.0, Culture=neutral, processorArchitecture=MSIL"
+	Path="ThirdParty\ActiPro\ActiproSoftware.WinUICore.Net20.dll" />
+</ExternalProject>

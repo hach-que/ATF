@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Name="Atf.Collada" Path="Framework\Atf.Collada" Type="Library">
+  <References>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Atf.Core" />
+    <Reference Include="Atf.Gui" />
+    <Reference Include="Atf.Gui.OpenGL" />
+  </References>
+  <Files>
+    <Compile Include="Animation.cs" />
+    <Compile Include="AnimationChannel.cs" />
+    <Compile Include="AnimationClip.cs" />
+    <Compile Include="AnimationSampler.cs" />
+    <Compile Include="Collada.cs" />
+    <Compile Include="ColladaResolver.cs" />
+    <Compile Include="ColladaSchemaTypeLoader.cs" />
+    <Compile Include="ColladaXmlPersister.cs" />
+    <Compile Include="Effect.cs" />
+    <Compile Include="Geometry.cs" />
+    <Compile Include="Input.cs" />
+    <Compile Include="InstanceController.cs" />
+    <Compile Include="InstanceGeometry.cs" />
+    <Compile Include="Mesh.cs" />
+    <Compile Include="Node.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Scene.cs" />
+    <Compile Include="schemas\Schema.cs" />
+    <Compile Include="Source.cs" />
+    <Compile Include="SubMesh.cs" />
+    <Compile Include="Tools.cs" />
+    <Compile Include="VisualScene.cs" />
+    <EmbeddedResource Include="schemas\collada.xsd" />
+    <None Include="schemas\GenSchemaDef.bat" />
+    <EmbeddedResource Include="schemas\xml.xsd" />
+  </Files>
+</Project>

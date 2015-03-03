@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ExternalProject Name="p4api.net">
+  <Binary Name="p4api.net" Path="ThirdParty\P4API.NET\clr4\x64\p4api.net.dll" />
+  <NativeBinary Path="ThirdParty\P4API.NET\clr4\x64\p4bridge.dll" />
+</ExternalProject>

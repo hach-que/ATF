@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ExternalProject Name="IronPython">
+  <Binary Name="IronPython" Path="ThirdParty\IronPython\IronPython.dll" />
+  <Binary Name="IronPython.Modules" Path="ThirdParty\IronPython\IronPython.Modules.dll" />
+  <Binary Name="Microsoft.Dynamic" Path="ThirdParty\IronPython\Microsoft.Dynamic.dll" />
+</ExternalProject>

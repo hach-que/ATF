@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Name="Atf.SyntaxEditorControl" Path="Framework\Atf.SyntaxEditorControl" Type="Library">
+  <References>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ActiPro" />
+    <Reference Include="Atf.Core" />
+    <Reference Include="Atf.Gui" />
+    <Reference Include="Atf.Gui.WinForms" />
+  </References>
+  <Files>
+    <Compile Include="Controls\SyntaxEditorControl\BreakpointEventArgs.cs" />
+    <Compile Include="Controls\SyntaxEditorControl\BreakpointIndicator.cs" />
+    <Compile Include="Controls\SyntaxEditorControl\EditorTextChangedEventArgs.cs" />
+    <Compile Include="Controls\SyntaxEditorControl\IBreakpoint.cs" />
+    <Compile Include="Controls\SyntaxEditorControl\ISyntaxEditorControl.cs" />
+    <Compile Include="Controls\SyntaxEditorControl\Languages.cs" />
+    <Compile Include="Controls\SyntaxEditorControl\LuaDynamicSyntaxLanguage.cs" />
+    <Compile Include="Controls\SyntaxEditorControl\MouseHoverOverTokenEventArgs.cs" />
+    <Compile Include="Controls\SyntaxEditorControl\ShowContextMenuEventArg.cs" />
+    <Compile Include="Controls\SyntaxEditorControl\SyntaxEditorControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\SyntaxEditorControl\SyntaxEditorRegions.cs" />
+    <Compile Include="Controls\SyntaxEditorControl\TextEditorFactory.cs" />
+    <Compile Include="Controls\SyntaxEditorControl\Token.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="LanguageDefinitions\CgDefinition.xml" />
+    <EmbeddedResource Include="LanguageDefinitions\CSharpDefinition.xml" />
+    <EmbeddedResource Include="LanguageDefinitions\LuaDefinition.xml" />
+    <EmbeddedResource Include="LanguageDefinitions\PythonDefinition.xml" />
+    <EmbeddedResource Include="LanguageDefinitions\SquirrelDefinition.xml" />
+    <EmbeddedResource Include="LanguageDefinitions\XMLDefinition.xml" />
+    <EmbeddedResource Include="LanguageDefinitions\ImatDefinition.xml" />
+  </Files>
+</Project>
